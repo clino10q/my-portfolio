@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <div className="bg-blue-950 bg-cover h-full w-full flex flex-col items-center text-white">
+    <div className="bg-[#0b0f19] bg-cover h-full w-full flex flex-col items-center text-white">
       <Nav />
       <Hero />
       <About />
