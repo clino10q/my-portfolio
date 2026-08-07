@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <div>
-      <h2>Contact</h2>
+    <div className="mt-15">
+      <h2 className="font-bold text-[50px]">Contact</h2>
       <div>
         <h3>
           Email:{" "}

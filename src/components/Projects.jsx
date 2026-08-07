@@ -61,38 +61,41 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="mt-30 w-[92%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 ">
-      {projects.map((project) => {
-        return (
-          <div
-            key={project.id}
-            className="group shadow-md flex flex-col overflow-hidden"
-          >
+    <div className="mt-30 w-[90%] flex flex-col gap-10">
+      <h1 className="font-bold text-5xl">Projects</h1>
+      <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 ">
+        {projects.map((project) => {
+          return (
             <div
-              className="h-[200px]  bg-cover bg-center bg-no-repeat rounded-t-[10px] rounded-e-none rounded-s-none transition-transform ease-in-out delay-[0.1s] group-hover:scale-105 "
-              style={{ backgroundImage: `url(${project.image}) ` }}
-            ></div>
-            <div className="flex p-5 flex-col gap-3 bg-[#151A24] rounded-b-[10px]">
-              <h2 className="font-semibold text-lg transition ease-in delay-[0.2s] group-hover:text-blue-600">
-                {project.title}
-              </h2>
-              <p className="text-stone-400 -mt-2 transition ease-in delay-[0.2s] group-hover:text-white">
-                {project.description}
-              </p>
+              key={project.id}
+              className="group shadow-md flex flex-col overflow-hidden"
+            >
+              <div
+                className="h-[200px]  bg-cover bg-center bg-no-repeat rounded-t-[10px] rounded-e-none rounded-s-none transition-transform ease-in-out delay-[0.1s] group-hover:scale-105 "
+                style={{ backgroundImage: `url(${project.image}) ` }}
+              ></div>
+              <div className="flex p-5 flex-col gap-3 bg-[#151A24] rounded-b-[10px]">
+                <h2 className="font-semibold text-lg transition ease-in delay-[0.2s] group-hover:text-blue-600">
+                  {project.title}
+                </h2>
+                <p className="text-stone-400 -mt-2 transition ease-in delay-[0.2s] group-hover:text-white">
+                  {project.description}
+                </p>
 
-              <div className="w-full flex gap-2">
-                <button className="px-3 py-[5px] rounded-[11px] bg-blue-500 font-medium hover:bg-white hover:text-blue-500 transition ease-in">
-                  {" "}
-                  <a href={project.liveLink}>Live Demo</a>{" "}
-                </button>{" "}
-                <button className="px-3 py-[5px] rounded-[11px] border border-blue-500 font-medium hover:bg-white hover:border-indigo-400 hover:text-indigo-400 transition ease-in">
-                  <a href={project.repo}>Source Code</a>
-                </button>
+                <div className="w-full flex gap-2">
+                  <button className="px-3 py-[5px] rounded-[11px] bg-blue-500 font-medium hover:bg-white hover:text-blue-500 transition ease-in">
+                    {" "}
+                    <a href={project.liveLink}>Live Demo</a>{" "}
+                  </button>{" "}
+                  <button className="px-3 py-[5px] rounded-[11px] border border-blue-500 font-medium hover:bg-white hover:border-indigo-400 hover:text-indigo-400 transition ease-in">
+                    <a href={project.repo}>Source Code</a>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }
