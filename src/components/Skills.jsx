@@ -5,8 +5,8 @@ export default function Skills() {
     <div className="mt-30 flex flex-col w-[90%] gap-10">
       <h2 className="text-5xl font-bold">Skills</h2>
       <div className="skills">
-        <h1>Languages</h1>
-        <div className="flex gap-4">
+        <h1 className="text-blue-400">Languages</h1>
+        <div className="flex gap-4 flex-wrap">
           {langset.map((lang) => {
             return (
               <div
@@ -20,8 +20,8 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills">
-        <h1>Frameworks/Libraries</h1>
-        <div className="flex gap-4">
+        <h1 className="text-blue-400">Frameworks/Libraries</h1>
+        <div className="flex gap-4 flex-wrap">
           {frameworks.map((frames) => {
             return (
               <div
@@ -35,8 +35,8 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills">
-        <h1>APIs & Data</h1>
-        <div className="flex gap-4">
+        <h1 className="text-blue-400">APIs & Data</h1>
+        <div className="flex gap-4 flex-wrap">
           {apis.map((api) => {
             return (
               <div
@@ -50,8 +50,8 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills">
-        <h1>Tooling/Deployment</h1>
-        <div className="flex gap-4">
+        <h1 className="text-blue-400">Tooling/Deployment</h1>
+        <div className="flex gap-4 flex-wrap">
           {tools.map((tool) => {
             return (
               <div
@@ -65,7 +65,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills">
-        <h1>Currently Learning</h1>
+        <h1 className="text-blue-400">Currently Learning</h1>
         <div className="flex gap-4">
           <div className="bg-stone-500 px-4 py-2 rounded-sm transition-transform duration-300 ease-in-out hover:scale-110 cursor-default">
             Backend Development

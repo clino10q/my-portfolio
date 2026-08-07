@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="mt-30 flex flex-col w-[90%] gap-10">
       <h2 className="text-5xl font-bold">About Me</h2>
-      <div className="w-[80%] text-stone-400 flex flex-col gap-2 text-[15px] font-semibold">
+      <div className="w-full text-stone-400 flex flex-col gap-2 text-[15px] font-semibold">
         <p>
           I'm Ilelaboye Ayomide, a frontend developer focused on turning ideas
           into interfaces that actually feel good to use. I work primarily in

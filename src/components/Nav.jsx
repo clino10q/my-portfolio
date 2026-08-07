@@ -34,10 +34,10 @@ export default function Nav() {
           </button>
         </div>
         <div
-          className={`flex gap-[30px] items-center relative max-md:absolute max-md:gap-[15px] max-md:flex-col max-md:w-[220px] max-md:p-[12px] max-md:top-[60px] max-md:right-[0px] max-md:rounded-xl  max-md:transition-opacity max-md:transition-transform max-md:duration-300 max-md:ease-in-out max-md:z-[999] ${
+          className={`flex  items-center relative max-md:absolute max-md:gap-[15px] max-md:flex-col max-md:w-[220px] max-md:p-[12px] max-md:top-[60px] max-md:right-[0px] max-md:rounded-xl  max-md:transition-opacity max-md:transition-transform max-md:duration-300 max-md:ease-in-out max-md:z-[999] ${
             shrink
-              ? "max-md:opacity-100 max-md:visible max-md:translate-y-0 shadow-lg "
-              : "max-md:opacity-[0] max-md:invisible max-md:-translate-y-2.5"
+              ? "max-md:opacity-100 max-md:visible max-md:translate-y-0 shadow-lg bg-[#0b0f19] mr-3 gap-[30px]"
+              : "max-md:opacity-[0] max-md:invisible max-md:-translate-y-2.5   gap-[50px]"
           }
         `}
         >
