@@ -42,7 +42,8 @@ export default function Projects() {
       image: saas,
       id: 4,
       title: "AI Website",
-      description: "An AI partner for your daily activities",
+      description:
+        "A modern AI-powered SaaS platform that streamlines workflows through intelligent automation and real-time insights.",
       liveLink: "https://lezhin-ai.netlify.app/",
       repo: "https://github.com/clino10q/Lezhin-AI",
       stack: ["HTML", "CSS", "JavaScript"],
@@ -52,42 +53,39 @@ export default function Projects() {
       image: hotel,
       id: 5,
       title: "Hotel Website",
-      description: "An hotel website created as my first serious project",
+      description:
+        "A modern hotel website designed to showcase rooms, amenities, and online booking with a seamless user experience.",
       liveLink: "https://www.google.com/",
       repo: "https://github.com/clino10q/uniform-hotel",
       stack: ["HTML", "CSS", "JavaScript"],
     },
   ];
   return (
-    <div className="mt-30 w-[92%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div className="mt-30 w-[92%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 ">
       {projects.map((project) => {
         return (
           <div
             key={project.id}
-            className=" shadow-md shadow-blue-500 rounded-[50px] flex flex-col gap-1"
+            className="group shadow-md flex flex-col overflow-hidden"
           >
             <div
-              className="h-[200px]  bg-cover bg-center bg-no-repeat rounded-[10px]"
+              className="h-[200px]  bg-cover bg-center bg-no-repeat rounded-t-[10px] rounded-e-none rounded-s-none transition-transform ease-in-out delay-[0.1s] group-hover:scale-105 "
               style={{ backgroundImage: `url(${project.image}) ` }}
             ></div>
-            <div className="flex p-5 flex-col gap-2">
-              <h2 className="font-semibold text-lg">{project.title}</h2>
-              <p className="text-stone-400">{project.description}</p>
-              <div className="text-stone-400 flex gap-2">
-                {project.stack.map((tech) => {
-                  return (
-                    <div className="rounded-full border py-1 px-3 border-blue-700 text-white text-[12px] bg-blue-700">
-                      {tech}
-                    </div>
-                  );
-                })}
-              </div>
-              <div>
-                <button className="p-2 rounded-full border">
+            <div className="flex p-5 flex-col gap-3 bg-[#151A24] rounded-b-[10px]">
+              <h2 className="font-semibold text-lg transition ease-in delay-[0.2s] group-hover:text-blue-600">
+                {project.title}
+              </h2>
+              <p className="text-stone-400 -mt-2 transition ease-in delay-[0.2s] group-hover:text-white">
+                {project.description}
+              </p>
+
+              <div className="w-full flex gap-2">
+                <button className="px-3 py-[5px] rounded-[11px] bg-blue-500 font-medium hover:bg-white hover:text-blue-500 transition ease-in">
                   {" "}
                   <a href={project.liveLink}>Live Demo</a>{" "}
                 </button>{" "}
-                <button className="p-2 rounded-full border">
+                <button className="px-3 py-[5px] rounded-[11px] border border-blue-500 font-medium hover:bg-white hover:border-indigo-400 hover:text-indigo-400 transition ease-in">
                   <a href={project.repo}>Source Code</a>
                 </button>
               </div>

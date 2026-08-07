@@ -11,7 +11,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <h4 className="text-blue-700 text-[20px] font-bold">
+        <h4 className="text-blue-600 text-[20px] font-bold">
           Frontend Developer
         </h4>
         <p className="text-neutral-400 font-semibold max-md:text-center">
@@ -19,7 +19,7 @@ export default function Hero() {
           building modern, responsive and user-friendly web experiences.
         </p>
         <div className="flex gap-4 w-[250px]">
-          <button className="h-[46px] w-[120px] bg-blue-700 rounded-md px-2 font-semibold cursor-pointer transition hover:bg-blue-500">
+          <button className="h-[46px] w-[120px] bg-blue-500 rounded-md px-2 font-semibold cursor-pointer transition hover:bg-blue-500">
             View CV
           </button>
           <button className="h-[46px] w-[140px] border border-blue-500 rounded-md px-2 font-semibold cursor-pointer transition">

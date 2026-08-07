@@ -53,7 +53,7 @@ export default function Nav() {
           <a className="font-medium text-white cursor-pointer transition hover:text-blue-500">
             Projects
           </a>
-          <a className="font-medium text-white cursor-pointer transition hover:bg-blue-700 bg-blue-700 px-3 py-2 rounded-sm">
+          <a className="font-medium text-white cursor-pointer transition hover:bg-blue-600 bg-blue-500 px-3 py-2 rounded-sm">
             Contact Me
           </a>
         </div>
