@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="mt-30 flex flex-col w-[90%] gap-10">
+    <section className="mt-30 flex flex-col w-[90%] gap-10" id="about">
       <h2 className="text-5xl font-bold">About Me</h2>
       <div className="w-full text-stone-400 flex flex-col gap-2 text-[15px] font-semibold">
         <p>
@@ -27,6 +27,6 @@ export default function About() {
           I'm not coding, I'm usually playing chess or breaking down a game.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

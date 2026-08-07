@@ -2,7 +2,7 @@ import { langset, frameworks, apis, tools } from "../../api/skills";
 
 export default function Skills() {
   return (
-    <div className="mt-30 flex flex-col w-[90%] gap-10">
+    <section className="mt-30 flex flex-col w-[90%] gap-10" id="skills">
       <h2 className="text-5xl font-bold">Skills</h2>
       <div className="skills">
         <h1 className="text-blue-400">Languages</h1>
@@ -72,6 +72,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

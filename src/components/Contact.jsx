@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="mt-15 w-[90%] flex flex-col gap-10">
+    <section className="mt-15 w-[90%] flex flex-col gap-10" id="contact">
       <h2 className="font-bold text-5xl">Contact</h2>
       <div className="bg-[#151A24] p-[40px] rounded-[20px] text-stone-400 flex flex-col gap-2">
         <h3 className="font-semibold">
@@ -33,6 +33,6 @@ export default function Contact() {
           </a>
         </h3>
       </div>
-    </div>
+    </section>
   );
 }

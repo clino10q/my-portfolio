@@ -41,19 +41,34 @@ export default function Nav() {
           }
         `}
         >
-          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]">
+          <a
+            className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]"
+            href="#hero"
+          >
             Home
           </a>
-          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]">
+          <a
+            className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]"
+            href="#about"
+          >
             About
           </a>
-          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]">
+          <a
+            className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]"
+            href="#skills"
+          >
             Skills
           </a>
-          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]">
+          <a
+            className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]"
+            href="#projects"
+          >
             Projects
           </a>
-          <a className="font-medium text-white cursor-pointer transition hover:bg-blue-600 bg-blue-500 px-3 py-2 rounded-sm max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033] max-md:text-center">
+          <a
+            className="font-medium text-white cursor-pointer transition hover:bg-blue-600 bg-blue-500 px-3 py-2 rounded-sm max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033] max-md:text-center"
+            href="#contact"
+          >
             Contact Me
           </a>
         </div>
