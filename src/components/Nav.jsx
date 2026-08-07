@@ -34,26 +34,26 @@ export default function Nav() {
           </button>
         </div>
         <div
-          className={`flex  items-center relative max-md:absolute max-md:gap-[15px] max-md:flex-col max-md:w-[220px] max-md:p-[12px] max-md:top-[60px] max-md:right-[0px] max-md:rounded-xl  max-md:transition-opacity max-md:transition-transform max-md:duration-300 max-md:ease-in-out max-md:z-[999] ${
+          className={`flex  gap-[30px] items-center relative max-md:absolute max-md:gap-[15px] max-md:flex-col max-md:w-[220px] max-md:p-[12px] max-md:top-[60px] max-md:right-[0px] max-md:rounded-xl  max-md:transition-opacity max-md:transition-transform max-md:duration-300 max-md:ease-in-out max-md:z-[999]  max-md:items-start max-md:pl-[20px] max-md:shadow-lg max-md:rounded-sm max-md:border max-md:border-[#122033] ${
             shrink
-              ? "max-md:opacity-100 max-md:visible max-md:translate-y-0 shadow-lg bg-[#0b0f19] mr-3 gap-[30px]"
-              : "max-md:opacity-[0] max-md:invisible max-md:-translate-y-2.5   gap-[50px]"
+              ? "max-md:opacity-100 max-md:visible max-md:translate-y-0 shadow-lg bg-[#0b0f19] mr-3 max-md:gap-[10px] "
+              : "max-md:opacity-[0] max-md:invisible max-md:-translate-y-2.5  "
           }
         `}
         >
-          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500">
+          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]">
             Home
           </a>
-          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500">
+          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]">
             About
           </a>
-          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500">
+          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]">
             Skills
           </a>
-          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500">
+          <a className="font-medium text-white cursor-pointer transition hover:text-blue-500 max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033]">
             Projects
           </a>
-          <a className="font-medium text-white cursor-pointer transition hover:bg-blue-600 bg-blue-500 px-3 py-2 rounded-sm">
+          <a className="font-medium text-white cursor-pointer transition hover:bg-blue-600 bg-blue-500 px-3 py-2 rounded-sm max-md:w-full max-md:border-b max-md:pb-3 max-md:border-[#122033] max-md:text-center">
             Contact Me
           </a>
         </div>
