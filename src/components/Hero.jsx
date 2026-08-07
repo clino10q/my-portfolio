@@ -20,7 +20,9 @@ export default function Hero() {
         </p>
         <div className="flex gap-4 w-[250px]">
           <button className="h-[46px] w-[120px] bg-blue-500 rounded-md px-2 font-semibold cursor-pointer transition hover:bg-blue-500">
-            View CV
+            <a href="https://docs.google.com/document/d/17nik0w6wpKIlp1DciqvzthUbs9BdE-OX/edit?usp=drive_link&ouid=117303723324206773182&rtpof=true&sd=true">
+              View CV
+            </a>
           </button>
           <button className="h-[46px] w-[140px] border border-blue-500 rounded-md px-2 font-semibold cursor-pointer transition">
             Contact Me
